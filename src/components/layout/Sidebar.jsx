@@ -7,7 +7,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
   const location = useLocation();
   const { darkMode, toggleTheme } = useTheme();
 
-  // Close sidebar on route change (mobile view)
+  // Close sidebar on route change (mobile)
   useEffect(() => {
     closeSidebar();
   }, [location.pathname]);
